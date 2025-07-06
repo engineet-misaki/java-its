@@ -20,4 +20,8 @@ public class IssueService {
     public void create(String summary, String description) {
         issueRepository.insert(summary,description);
     }
+
+    public Object find(long issueId) {
+        return issueRepository.find(issueId);
+    }
 }
